@@ -1,1 +1,1 @@
-Stagionatura Proyecto SENA para tecnico de programcion de sotfware
+Stagionatura Proyecto SENA para tecnico de programacion de software
