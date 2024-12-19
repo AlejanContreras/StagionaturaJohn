@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EFE5CA;
+}   
+header{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  background-color: #725B45;
+  align-items: center;
+}
+  
+footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #E0D4AE;
+}
+  
+.configuracion-logo{
+  display: grid;
+  grid-template-rows: 70% 1fr;
+}
+  
+.sesion{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10%;
+  font-weight: bold;
+}
+  
+.menu div img{ mix-blend-mode: color-burn; }
+  
+.logo img{ /*mix-blend-mode: color-burn;*/  width: 30%; }
+  
+.sesion a{ text-decoration: none;  color: black; }
+  
+.logo{
+  display: flex;
+  justify-content: right; 
+  align-items: center;  }
+  
+main{
+  padding: 2% 10%;
+}
+
+.configuracion-logo img{ width: 7.5%;}
+.configuracion{ width: 7.5%;  mix-blend-mode: color-burn; }
+
+h1 {
+  text-align: center;
+  color: #725B45;
+}
+.receta {
+  background-color: #A38263; 
+  border: 1px solid #937559; 
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.video {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.ingredientes {
+  list-style-type: none;
+  padding: 0;
+}
+.ingredientes li {
+  background-color: #937559;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+iframe{border-radius: 2%;}
+
+@media ( max-width: 700px){
+  .configuracion-logo{display:none;}
+  footer{
+    display: grid;
+    grid-template-columns:1fr;
+  }
+  footer .vacio{display: none;}
+  .redSo img{width: 20%;}
+  header img{width: 100%;}
+  header{
+    display: grid;
+    grid-template-columns: 1fr 10% 10% 1fr;
+  }
+  .sesion {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  main{padding: 5%;}
+  iframe{width: 100%;}
+}

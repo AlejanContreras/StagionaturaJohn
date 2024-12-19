@@ -1,0 +1,137 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+/*contactanos*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label{ margin: 10px 0 5px; }
+input, select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*COLORES*/
+body{ background-color: #EFE5CA; }
+table{ background-color: #A38263; }
+th{ background-color: #725B45; }
+tr:hover{ background-color: #896C54; }
+form{
+    background-color: #A38263;
+    border-radius: 5%;
+    padding: 5%;
+}
+input, select{ background-color: #D4C4A8; }
+button{ background-color: #896C54; }
+button:hover{ background-color: #725B45; }
+header{
+    display: grid;
+    grid-template-columns: 1fr 95%;
+}
+img{ width: 100%; }
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #E0D4AE;
+  }
+  
+  .configuracion-logo{
+    display: grid;
+    grid-template-rows: 70% 1fr;
+  }
+  
+  .configuracion-logo img{ width: 7.5%;}
+  .configuracion{ width: 7.5%;  mix-blend-mode: color-burn; }
+  
+  header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: #725B45;
+    align-items: center;
+  }
+  .sesion{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10%;
+    font-weight: bold;
+  }
+  
+  .menu div img{ mix-blend-mode: color-burn; }
+  
+  .logo img{ /*mix-blend-mode: color-burn;*/  width: 30%; }
+  
+  .sesion a{ text-decoration: none;  color: black; }
+  
+  .logo{
+    display: flex;
+    justify-content: right; 
+    align-items: center;
+  }
+  input{width: 96%;}
+
+@media ( max-width: 700px){
+    .configuracion-logo{display:none;}
+    footer{
+    display: grid;
+    grid-template-columns:1fr;
+    }
+    footer .vacio{display: none;}
+    .redSo img{width: 20%;}
+    .sesion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+    header img{width: 100%;}
+    header{
+      display: grid;
+      grid-template-columns: 1fr 10% 10% 1fr;
+    }
+    .sesion {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+    tbody{display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    tr{display: grid;}
+    #infoPagos{display: none;}
+    span{font-weight: bold;}
+    input{width: 92%;}
+}

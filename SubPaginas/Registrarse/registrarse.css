@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EFE5CA;
+  }   
+  header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: #725B45;
+    align-items: center;
+  }
+  
+  footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #E0D4AE;
+  }
+  
+  .configuracion-logo{
+    display: grid;
+    grid-template-rows: 70% 1fr;
+  }
+  
+  .logo img{  width: 30%; }
+  
+  /*main{
+    padding: 2% 20%;
+  }
+  
+  form {
+  display: flex;
+  flex-direction: column;
+  }
+  
+  label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  }
+  
+  input{
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #725B45;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #D4C4A8;
+  }
+  
+  button {
+  background-color: #725B45;
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  }
+  
+  button:hover {
+  background-color: #896C54;
+  }
+  
+  main{
+      display: grid;
+      grid-template-columns: 30% 5% 1fr;
+  }
+  .formulario{
+      background-color: #896C54;
+      padding: 5%;
+      border-radius: 5%;
+  }
+  #continuar{
+      background-color: #896C54;
+  }
+  #continuar:hover{
+      background-color: #725B45;
+  }
+  a{text-decoration: none; color:black;}
+  a button{width: 100%;}*/
+
+  .configuracion-logo img{ width: 7.5%;}
+  .configuracion{ width: 7.5%;  mix-blend-mode: color-burn; }
+
+@media ( max-width: 700px){
+  .configuracion-logo{display:none;}
+  footer{
+  display: grid;
+  grid-template-columns:1fr;
+  }
+  footer .vacio{display: none;}
+  .redSo img{width: 20%;}
+  .sesion{
+  display: grid;
+  grid-template-columns: 50%;
+  }
+  header img{width: 100%;}
+  header{
+  display: grid;
+  grid-template-columns: 50% 10% 1fr 50%;
+  }
+  /*main{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 5% 20%;
+  }
+  main h2{text-align: center;}*/
+}

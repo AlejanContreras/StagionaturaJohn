@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio Técnico</title>
+    <link href="serviciotecnico.css" rel="stylesheet" type="text/css" />
+    <link rel="website icon" type="png" href="https://i.ibb.co/bvD1SGz/Captura-de-pantalla-20240928-093419.png">
+    <meta name="keywords" content="">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="/INDEX PRINCIPAL/index.html">
+                <img src="https://i.ibb.co/xs9xDGR/logo-Oscuro.png"
+                    alt="Captura-de-pantalla-20240928-093419" border="0" />
+            </a>
+        </div>
+        <div class="vacio"></div>
+        <div class="vacio"></div>
+        <div class="sesion">
+            <div>
+                <a href="/SubPaginas/InicioSesion/iniciosesion.html">
+                    <p>Iniciar sesión</p>
+                </a>
+            </div>
+            <div>
+                <a href="/SubPaginas/Registrarse/registrarse.html">
+                    <p>Registrarse </p>
+                </a>
+            </div>
+            <div>
+                <a href="serviciotecnico.html">
+                    <p>Servicio técnico</p>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div class="container">
+            <h1>Preguntas Frecuentes</h1>
+            <div class="faq">
+                <h2 onclick="toggleAnswer(this)">¿Cómo puedo contactar al soporte?</h2>
+                <p>Puedes contactar al soporte enviándonos un correo electrónico.</p>
+            </div>
+            <div class="faq">
+                <h2 onclick="toggleAnswer(this)">¿Dónde puedo encontrar mis pedidos?</h2>
+                <p>Tu historial de pedidos se encuentra en tu cuenta bajo la sección "Mi carrito".</p>
+            </div>
+            <div class="faq">
+                <h2 onclick="toggleAnswer(this)">¿Cómo puedo devolver un producto?</h2>
+                <p>Para devolver un producto, debes seguir las instrucciones en nuestra política de devoluciones en el
+                    sitio web.</p>
+            </div>
+            <div class="faq">
+                <h2 onclick="toggleAnswer(this)">¿Error en la configuración del pedido?</h2>
+                <p>Reiniciar la sección actual de la web y volver a revisar la información.</p>
+            </div>
+            <div class="faq">
+                <h2 onclick="toggleAnswer(this)">¿Falta de la actualización del estado del pedido?</h2>
+                <p>Revisar y actualizar manualmente el estado del pedido.</p>
+            </div>
+            <div class="faq">
+                <h2 onclick="toggleAnswer(this)">¿Problemas con la asignación de la entrega?</h2>
+                <p>Reasignarla entrega manualmente y verificar la disponibilidad de los repartidores.</p>
+            </div>
+            <div class="faq">
+                <h2 onclick="toggleAnswer(this)">¿Error en el proceso de pago?</h2><!--Comentario-->
+                <p>Contactar al proovedor de pago para verificar el error.(>.<)</p>
+            </div>
+            <div class="faq">
+                <h2 onclick="toggleAnswer(this)">¿Problemas con la estimación del tiempo de entrega?</h2>
+                <p>Comunicarse con el soporte para poder ayudarte.</p>
+            </div>
+            <div class="faq">
+                <h2 onclick="toggleAnswer(this)">¿Problemas con la estimación del tiempo de respuesta de la página ?
+                </h2>
+                <p>                   
+                    Tu conexión a internet, si falla reinicia tu router, en caso de eso no servir espere que
+                    nuestros servidores de actualicen.</p>
+            </div>
+            <div class="faq">
+                <h2 onclick="toggleAnswer(this)">¿Error en la dirección de entrega?</h2>
+                <p>Solicite al soporte y vuelva a realizar el pedido.</p>
+            </div>
+            <div class="faq">
+                <h2 onclick="toggleAnswer(this)">¿No puedes observar nuestros videoclips?</h2>
+                <p>Actualiza la página y revisa que tu conexión a internet sea estable.</p>
+            </div>
+            <div class="vacio"><br><br></div>
+
+                <h1>¡Estamos aquí para ayudarte!</h1>
+
+                <form action="contactenos.php" method="POST">
+                  <label for="Nombre">Nombre:</label>
+                  <input type="text" id="Nombre" name="Nombre" required>
+                  <br>
+
+                  <label for="email">Correo Electrónico:</label>
+                  <input type="email" id="email" name="email" required>
+
+                  <br>
+                  <label for="telefono">Teléfono:</label>
+                  <input type="number" id="telefono" name="telefono" required>
+
+                  <br>
+                  <label for="mensaje">Mensaje:</label>
+                  <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+
+                  <br>
+                  <button type="submit" name="Enviar" onclick="enviar()">Enviar</button><!--hacer que envie el texto-->
+                </form>
+
+
+
+        </div>
+    </main>
+    <footer>
+        <section class="informacion">
+            <p>Políticas de privacidad</p>
+            <p>Copyright© Stagionatura</p>
+            <p>Dirección: </p>
+            <p>No. Teléfono</p>
+
+        </section>
+        <section class="vacio"></section>
+        <section class="configuracion-logo">
+            <div class="vacio"></div>
+            <div class="confi-logo">
+                <a>
+                    <img src="https://w7.pngwing.com/pngs/873/399/png-transparent-cogwheel-configuration-gear-settings-user-interface-glyph-icon-thumbnail.png"
+                        alt="Configuracion"  class="configuracion">
+                </a>
+                <a>
+                    <img src="https://i.ibb.co/zVRqMkr/logo-Claro.png" alt="Captura-de-pantalla-20240928-093419" border="0" />
+                </a>
+            </div>
+        </section>
+    </footer>
+
+    <script>
+        function toggleAnswer(element) {
+            const answer = element.nextElementSibling;
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+        function enviar(){
+            alert("El PQR ha sido enviado correctamente");
+        }
+        console.log("colabore con Nico-Ni")
+    </script>
+
+</body>
+
+</html>
